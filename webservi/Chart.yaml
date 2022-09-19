@@ -1,0 +1,16 @@
+apiVersion: v2
+name: webservi
+namespace: webserv-helm
+version: 0.1.1
+appVersion: "0.1.1"
+description: A Helm chart for installation of simple webserv
+home: https://mydomain.de
+maintainers:
+  - name: Matthias Boldt
+    email: Matthias.Boldt@mydomain.de
+
+dependencies:
+  - name: ingress-nginx
+    version: ">=4.2.5"
+    repository: file://./charts/ingress-nginx
+
